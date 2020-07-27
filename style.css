@@ -26,6 +26,11 @@ body {
   padding: 60px;
 }
 
+.first-row {
+  display: flex;
+  flex-direction: column;
+}
+
 .my-intro__my-photo {
   width: 225px;
   height: 225px;
@@ -86,7 +91,7 @@ h1 {
 
 .my-intro__my-details {
   width: 860px;
-  margin: 0 10px;
+  margin: 0 0 0 10px;
   padding: 0;
 }
 
@@ -210,6 +215,78 @@ h1 {
   color: #FFFFFF;
   width: 147px;
   text-align: center;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+  main {
+    width: 100vw;
+  }
+
+  .my-intro {
+    display: block;
+    width: 100%;
+  }
+
+  .my-intro__my-info {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  .my-intro__my-details {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0;
+  }
+
+  .first-row {
+    width: inherit;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .second-row {
+    width: inherit;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .my-intro__about-me_blocks {
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 991px) {
+  .my-intro {
+    display: block;
+  }
+
+  .my-intro__my-info {
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .first-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .second-row {
+    align-items: center;
+  }
+
+  .my-intro__my-details {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
