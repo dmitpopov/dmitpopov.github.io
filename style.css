@@ -1,9 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 body {
   font-family: Roboto, sans-serif;
 }
 
+.my-intro {
+  display: flex;
+  background-color: #E5E5E5;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 .my-intro__my-data hr {
   margin: 40px 0;
+  border: 1px solid #969696;
 }
 
 .my-intro__my-info {
@@ -12,8 +21,9 @@ body {
   flex-direction: column;
   align-items: center;
   background: #FFFFFF;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   border-radius: 12px;
+  padding: 60px;
 }
 
 .my-intro__my-photo {
@@ -72,6 +82,134 @@ h1 {
 }
 .my-intro__write-me:focus {
   outline: none;
+}
+
+.my-intro__my-details {
+  width: 860px;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.wrap__logo {
+  width: 95px;
+  height: 95px;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 95px;
+  text-align: center;
+  border-radius: 16px;
+  background-color: #C4C4C4;
+  color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.my-intro__about-me_blocks {
+  background: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 60px;
+  margin-bottom: 10px;
+}
+
+.wrap {
+  display: flex;
+  padding-bottom: 70px;
+  margin-top: 38px;
+  box-sizing: border-box;
+}
+
+.wrap-info {
+  margin-left: 35px;
+  width: calc(100% - 105px);
+}
+
+.wrap-info__details {
+  margin-bottom: 23px;
+}
+
+.wrap-info p {
+  margin: 0;
+}
+
+.wrap-info__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.wrap-info__occupation {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.wrap-info__dates {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.wrap-info__city {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.my-intro__my-details h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.languages__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.languages__card {
+  width: 223px;
+  height: 118px;
+  background-color: #E7E7E7;
+  border-radius: 10px;
+  padding: 20px 17px;
+  margin-top: 17px;
+  display: flex;
+}
+
+.languages__card div {
+  margin-left: 10px;
+}
+
+.languages__card p {
+  margin: 0;
+}
+
+.languages__card img {
+  width: 50px;
+  height: 29px;
+}
+
+.languages__card__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+}
+
+.my-intro__interests__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.my-intro__interests__card {
+  background-color: #233558;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+  width: 147px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
