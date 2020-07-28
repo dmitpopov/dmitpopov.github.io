@@ -36,6 +36,10 @@ body {
   height: 225px;
   border-radius: 50%;
   display: inline-block;
+  background-image: url("./img/photo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200%;
 }
 
 h1 {
