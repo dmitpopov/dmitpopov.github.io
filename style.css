@@ -17,9 +17,7 @@ body {
 
 .my-intro__my-info {
   width: 349px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: fit-content;
   background: #FFFFFF;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   border-radius: 12px;
@@ -31,6 +29,10 @@ body {
   flex-direction: column;
 }
 
+.second-row {
+  text-align: center;
+}
+
 .my-intro__my-photo {
   width: 225px;
   height: 225px;
@@ -40,6 +42,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 200%;
+  margin: 0 auto;
 }
 
 .my-intro__my-data {
@@ -61,6 +64,7 @@ h1 {
 .my-intro__my-contacts {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .my-intro__contacts {
@@ -74,6 +78,7 @@ h1 {
 .my-intro__contacts img {
   width: 28px;
   height: 29.59px;
+  margin-right: 30px;
 }
 
 .my-intro__contacts input {
@@ -81,11 +86,12 @@ h1 {
   height: 24px;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
+  text-align: left;
   border: none;
 }
 
 .my-intro__write-me {
+  color: #FFFFFF;
   width: 250px;
   height: 50px;
   background: #999696;
@@ -98,9 +104,14 @@ h1 {
 }
 
 .my-intro__my-details {
-  width: 860px;
   margin: 0 0 0 10px;
   padding: 0;
+}
+
+.my-intro__about-me {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .wrap__logo {
@@ -140,7 +151,9 @@ h1 {
   margin-bottom: 23px;
 }
 
-.wrap-info p {
+.wrap-info__content {
+  font-size: 18px;
+  line-height: 21px;
   margin: 0;
 }
 
@@ -148,22 +161,32 @@ h1 {
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
 }
 
 .wrap-info__occupation {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
 .wrap-info__dates {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
 .wrap-info__city {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
+}
+
+.wrap-info__detailed {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .my-intro__my-details h2 {
@@ -269,6 +292,11 @@ h1 {
   .my-intro__about-me_blocks {
     box-sizing: border-box;
   }
+
+  .languages__wrap {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 @media screen and (max-width: 991px) {
   .my-intro {
@@ -294,6 +322,28 @@ h1 {
   .my-intro__my-details {
     width: 100%;
     margin: 0;
+  }
+
+  .languages__wrap {
+    display: block;
+  }
+
+  .languages__card {
+    margin: 17px auto 0 auto;
+  }
+
+  .my-intro__interests__wrap {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .my-intro__interests__card {
+    margin: 10px 0 0 0;
+  }
+
+  .my-intro__interests__card_mod {
+    margin: 10px 10px 0;
   }
 }
 
