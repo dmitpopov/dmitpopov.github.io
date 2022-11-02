@@ -90,16 +90,25 @@ h1 {
 }
 
 .my-intro__write-me {
+  display: flex;
+  align-items: center;
   color: #FFFFFF;
   width: 250px;
   height: 50px;
   background: #999696;
   border-radius: 25px;
   border: none;
-  margin: 40px 0;
+  margin: 40px auto;
 }
 .my-intro__write-me:focus {
   outline: none;
+}
+
+.my-intro__write-me a {
+  font-size: 18px;
+  display: block;
+  color: #FFFFFF;
+  width: inherit;
 }
 
 .my-intro__my-details {
@@ -251,12 +260,10 @@ h1 {
   main {
     width: 100vw;
   }
-
   .my-intro {
     display: block;
     width: 100%;
   }
-
   .my-intro__my-info {
     width: 100%;
     justify-content: space-between;
@@ -265,25 +272,21 @@ h1 {
     margin-bottom: 10px;
     box-sizing: border-box;
   }
-
   .my-intro__my-details {
     display: block;
     width: 100%;
     box-sizing: border-box;
     margin-left: 0;
   }
-
   .first-row {
     width: inherit;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
-
   .my-intro__my-photo {
     margin: 0;
   }
-
   .second-row {
     width: inherit;
     display: flex;
@@ -291,11 +294,9 @@ h1 {
     justify-content: space-around;
     align-items: center;
   }
-
   .my-intro__about-me_blocks {
     box-sizing: border-box;
   }
-
   .languages__wrap {
     display: flex;
     justify-content: space-evenly;
@@ -305,46 +306,37 @@ h1 {
   .my-intro {
     display: block;
   }
-
   .my-intro__my-info {
     width: 100%;
     margin: 10px 0;
     box-sizing: border-box;
   }
-
   .first-row {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .second-row {
     align-items: center;
   }
-
   .my-intro__my-details {
     width: 100%;
     margin: 0;
   }
-
   .languages__wrap {
     display: block;
   }
-
   .languages__card {
     margin: 17px auto 0 auto;
   }
-
   .my-intro__interests__wrap {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
-
   .my-intro__interests__card {
     margin: 10px 0 0 0;
   }
-
   .my-intro__interests__card_mod {
     margin: 10px 10px 0;
   }
